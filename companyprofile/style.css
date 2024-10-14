@@ -1,0 +1,317 @@
+*
+{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ini memastikan padding tidak mempengaruhi ukuran elemen */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(bgbgbg.png);
+    background-color: white;
+    background-repeat: repeat;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Warna hitam dengan opacity 0.5 */
+    z-index: -1; /* Pastikan layer ini berada di bawah teks */
+}
+
+
+nav .wrapper {
+    width: 1100px; /* Atur lebar tetap untuk wrapper di taskbar */
+    margin: auto;
+    position: relative;
+    display: flex; /* Menyelaraskan elemen di dalam wrapper secara horizontal */
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
+}
+
+.circle {
+    width: 30px; /* Atur ukuran lingkaran */
+    height: 30px; /* Atur ukuran lingkaran */
+    background-color: #007BFF; /* Warna lingkaran */
+    border-radius: 50%; /* Membuatnya menjadi lingkaran */
+    margin-right: 10px; /* Memberikan jarak antara lingkaran dan logo */
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: Arial;
+    color: #272727;
+}
+
+.menu {
+    margin-left: auto; /* Mengatur menu agar berada di sebelah kanan */
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center; /* Menyelaraskan semua item secara vertikal */
+    line-height: 80px;
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #A7A7A7; /* Menambahkan garis bawah */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #007BFF;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #004D89;
+}
+
+#home {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%; /* Membiarkan elemen #home menggunakan lebar penuh */
+}
+
+.home-image {
+    width: 850px; /* Sesuaikan ukuran lebar gambar */
+    height: auto; /* Menjaga proporsi gambar */
+    margin-right: 20px; /* Memberikan ruang di sebelah kanan gambar */
+    margin-left: 50px; /* Menggeser gambar sedikit ke kiri */
+}
+
+section {
+    margin: auto ;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-right: 50px; /* Tambahkan jarak dari sisi kanan */
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #004D89 ;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #004D89;
+    width: 100%;
+    line-height: 50px;
+}
+
+.kolom .deskripsi2 {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 16px; /* Sesuaikan ukuran font jika perlu */
+    color: #272727; /* Sesuaikan warna jika diperlukan */
+    line-height: 1.5; /* Menambahkan tinggi baris untuk kemudahan baca */
+}
+
+a.tblbiru{
+    background: #007BFF;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+a.tblbiru:hover{
+    background-color: #395A66;
+    text-decoration: none
+
+}
+
+p {
+    margin : 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+    padding: 20px 0; /* Menambahkan padding agar seragam dengan #home */
+}
+#services {
+    display: flex;
+    justify-content: center; /* Mengatur konten agar berada di tengah secara horizontal */
+    align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
+    padding: 40px; /* Menambahkan padding seragam di semua sisi */
+    gap: 30px; /* Menambahkan jarak antara gambar dan teks */
+}
+
+#services .kolom {
+    max-width: 1200px; /* Mengatur lebar maksimal kolom agar tidak terlalu lebar */
+    padding: 0 20px; /* Padding horizontal untuk memberikan ruang di sekitar teks */
+}
+
+#services img {
+    width: 700px; /* Mengurangi lebar gambar agar sesuai dengan teks */
+    height: auto; /* Menjaga proporsi gambar */
+}
+
+html {
+    scroll-behavior: smooth; /* Menambahkan efek scroll halus */
+}
+
+#joinus {
+    display: flex; /* Aktifkan Flexbox */
+    flex-direction: column; /* Menyusun elemen secara vertikal */
+    justify-content: center; /* Menyelaraskan konten secara horizontal */
+    align-items: center; /* Menyelaraskan konten secara vertikal */
+    text-align: center; /* Menyelaraskan teks ke tengah */
+    padding: 40px 20px; /* Menambahkan padding agar seragam */
+    background-color: #f4f4f4; /* Tambahkan latar belakang jika perlu */
+}
+
+#joinus h1 {
+    color: #004D89; /* Warna biru gelap */
+    font-size: 36px; /* Ukuran font untuk h1 */
+    margin-bottom: 20px; /* Jarak antara h1 dan teks di bawahnya */
+}
+
+#joinus p {
+    font-size: 18px; /* Ukuran font untuk teks lorem */
+    color: #272727; /* Warna teks */
+    line-height: 1.6; /* Tinggi baris untuk kemudahan baca */
+    margin-bottom: 20px; /* Jarak antara teks dan tombol */
+}
+
+#joinus a.tblbiru {
+    background: #007BFF; /* Warna latar belakang tombol */
+    border-radius: 20px; /* Membuat sudut tombol melengkung */
+    padding: 15px 20px; /* Padding tombol */
+    color: #FFFFFF; /* Warna teks tombol */
+    text-decoration: none; /* Menghapus garis bawah */
+    font-weight: bold; /* Menebalkan teks tombol */
+    display: inline-block; /* Agar tombol tidak memenuhi lebar kontainer */
+}
+
+#joinus a.tblbiru:hover {
+    background-color: #395A66; 
+}
+
+#contact {
+    display: flex;
+    justify-content: center; /* Mengatur konten agar berada di tengah secara horizontal */
+    align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
+    padding: 40px; /* Menambahkan padding seragam di semua sisi */
+    gap: 30px; /* Menambahkan jarak antara gambar dan teks */
+}
+
+#contact .kolom {
+    max-width: 1200px; /* Mengatur lebar maksimal kolom agar tidak terlalu lebar */
+    padding: 0 20px; /* Padding horizontal untuk memberikan ruang di sekitar teks */
+}
+
+#contact img {
+    width: 700px; /* Mengurangi lebar gambar agar sesuai dengan teks */
+    height: auto; /* Menjaga proporsi gambar */
+}
+
+h3 {
+    color: #004D89;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+
+@media screen and (max-widht: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+
+    }
+
+    section {
+        display: block;
+
+    }
+
+    section img {
+        display: block;
+    }
+
+}
+
+#about {
+    display: flex;
+    justify-content: center; /* Mengatur konten agar berada di tengah secara horizontal */
+    align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
+    padding: 40px; /* Menambahkan padding seragam di semua sisi */
+    gap: 30px; /* Menambahkan jarak antara gambar dan teks */
+}
+
+#about .kolom {
+    max-width: 1200px; /* Mengatur lebar maksimal kolom agar tidak terlalu lebar */
+    padding: 0 20px; /* Padding horizontal untuk memberikan ruang di sekitar teks */
+}
+
+#about img {
+    width: 700px; /* Mengurangi lebar gambar agar sesuai dengan teks */
+    height: auto; /* Menjaga proporsi gambar */
+}
